@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIs e Integrações - PWEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>APIs e Integrações</h1>
+            <p class="subtitle">Conceitos e Práticas no Desenvolvimento Web</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#introducao">Introdução</a>
+            <a href="#conceitos">Conceitos</a>
+            <a href="#metodos">Métodos HTTP</a>
+            <a href="#exemplos">Exemplos</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section id="introducao" class="card">
+            <h2>1. Introdução</h2>
+            <p>Uma <strong>API</strong> (<em>Application Programming Interface</em>) é um conjunto de regras que permite que diferentes aplicações se comuniquem entre si. Elas funcionam como pontes, permitindo a troca segura e eficiente de dados na web.</p>
+            
+            <div class="image-placeholder">
+                <p><img src="images/ComoFunciona.webp" alt="Como Funciona"></p>
+            </div>
+        </section>
+
+        <section id="conceitos" class="card">
+            <h2>2. Conceitos Principais</h2>
+            <p>A maioria das APIs web modernas utiliza o padrão <strong>REST</strong> (Representational State Transfer) e transmite informações no formato <strong>JSON</strong>.</p>
+            
+            <ul>
+                <li><strong>Cliente:</strong> A aplicação (site ou app) que faz a requisição.</li>
+                <li><strong>Servidor:</strong> O sistema que recebe o pedido, processa e devolve a resposta.</li>
+                <li><strong>Endpoint:</strong> A URL onde o serviço da API está disponível.</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><img src="/images/rest.png" alt="rest"></p>
+            </div>
+        </section>
+
+        <section id="metodos" class="card">
+            <h2>3. Métodos HTTP Principais</h2>
+            <p>Para interagir com uma API REST, utilizamos os métodos HTTP de acordo com a ação desejada:</p>
+            
+            <table class="simple-table">
+                <thead>
+                    <tr>
+                        <th>Método</th>
+                        <th>Ação</th>
+                        <th>Exemplo de Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge get">GET</span></td>
+                        <td>Buscar dados</td>
+                        <td>Consultar lista de usuários</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge post">POST</span></td>
+                        <td>Criar dado</td>
+                        <td>Cadastrar um novo usuário</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge put">PUT / PATCH</span></td>
+                        <td>Atualizar dado</td>
+                        <td>Alterar a senha do usuário</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge delete">DELETE</span></td>
+                        <td>Deletar dado</td>
+                        <td>Excluir uma conta</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="exemplos" class="card">
+            <h2>4. Exemplos Práticos do Dia a Dia</h2>
+            <p>As APIs estão presentes em quase todos os serviços web que utilizamos diariamente:</p>
+            <ul>
+                <li><strong>Pagamentos:</strong> Checkout com Mercado Pago ou Stripe em e-commerces.</li>
+                <li><strong>Autenticação:</strong> Botões do tipo "Entrar com o Google" ou "Entrar com GitHub".</li>
+                <li><strong>Mapas:</strong> Localização e rotas integradas com o Google Maps.</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><img src="images/Exemplo3.png" alt="Exemplo de Integração"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Atividade Prática - Programação Web (PWEB) | Fatec Sorocaba</p>
+        </div>
+    </footer>
+
+</body>
+</html>
